@@ -137,6 +137,8 @@ call s:hi('CursorLineNr', s:palette.gray14, s:palette.gray01, 'none')
 call s:hi('Visual', s:palette.black, s:palette.gray06, '')
 call s:hi('Search', s:palette.gray01, s:palette.gray11, 'none')
 call s:hi('IncSearch', s:palette.black, s:palette.gray07, 'bold')
+"call s:hi('Search', s:palette.gray01, s:palette.purple, 'none')
+"call s:hi('IncSearch', s:palette.black, s:palette.purple, 'bold')
 
 call s:hi('SpellBad', s:palette.red, s:palette.black, 'undercurl')
 call s:hi('SpellCap', s:palette.red, s:palette.black, 'undercurl')
@@ -151,7 +153,8 @@ call s:hi('MoreMsg', s:palette.gray10, [], '')
 
 call s:hi('MatchParen', s:palette.magenta, s:palette.black, '')
 
-call s:hi('Cursor', [], s:palette.gray12, '')
+"call s:hi('Cursor', [], s:palette.gray12, '')
+call s:hi('Cursor', [], s:palette.purple, '')
 call s:hi('Underlined', s:palette.gray08, [], 'underline')
 call s:hi('SpecialKey', s:palette.gray04, [], '')
 call s:hi('NonText', s:palette.gray04, [], '')

@@ -6,9 +6,9 @@ highlight clear
 if exists("syntax_on")
 	syntax reset
 endif
-let g:colors_name="sam"
+let g:colors_name="__NAME__"
 
-" functions
+" functions 
 " returns an approximate grey index for the given grey level
 fun <SID>grey_number(x)
 	if &t_Co == 88
@@ -204,21 +204,21 @@ endfun
 
 let s:palette={}
 
-let s:palette.background=[0,'#1c1c1c']
-let s:palette.foreground=[1,'#cacaca']
-let s:palette.highlight=[ 2,'#8937d4']
-let s:palette.accent1=[   3,'#c89bf1']
-let s:palette.accent2=[   4,'#885bb1']
-let s:palette.gray02=[    5,'#484848']
-let s:palette.gray03=[    6,'#585858']
-let s:palette.gray04=[    7,'#686868']
-let s:palette.gray05=[    8,'#787878']
-let s:palette.green=[     9,'#40916c']
-let s:palette.gray07=[   10,'#989898']
-let s:palette.gray08=[   11,'#a8a8a8']
-let s:palette.blue=[     12,'#1a759f']
-let s:palette.gray10=[   13,'#e3e3e3']
-let s:palette.red=[      14,'#f72585']
+let s:palette.background=[0,'#1C1C1C']
+let s:palette.foreground=[1,'#FEFEFE']
+let s:palette.highlight=[ 2,'#ECF39E']
+let s:palette.accent1=[   3,'#90A955']
+let s:palette.accent2=[   4,'#7FA75D']
+let s:palette.text01=[    5,'#E8E9EA']
+let s:palette.text02=[    6,'#D9DCDF']
+let s:palette.text03=[    7,'#CECECE']
+let s:palette.text04=[    8,'#BEB4BA']
+let s:palette.text05=[   10,'#ADA5AD']
+let s:palette.text06=[   11,'#8C858D']
+let s:palette.text07=[   13,'#696067']
+let s:palette.green=[     9,'#38B000']
+let s:palette.red=[      14,'#D90429']
+let s:palette.blue=[     12,'#05668D']
 
 let g:terminal_ansi_colors=[
 			\ s:palette.background[1],
@@ -226,15 +226,15 @@ let g:terminal_ansi_colors=[
 			\ s:palette.highlight[1],
 			\ s:palette.accent1[1],
 			\ s:palette.accent2[1],
-			\ s:palette.gray02[1],
-			\ s:palette.gray03[1],
-			\ s:palette.gray04[1],
-			\ s:palette.gray05[1],
+			\ s:palette.text01[1],
+			\ s:palette.text02[1],
+			\ s:palette.text03[1],
+			\ s:palette.text04[1],
 			\ s:palette.green[1],
-			\ s:palette.gray07[1],
-			\ s:palette.gray08[1],
+			\ s:palette.text05[1],
+			\ s:palette.text06[1],
 			\ s:palette.blue[1],
-			\ s:palette.gray10[1],
+			\ s:palette.text07[1],
 			\ s:palette.red[1],
 			\ ]
 
@@ -261,30 +261,30 @@ call s:hi('Constant',s:palette.accent2,[],'bold')
 call s:hi('String',s:palette.accent2,[],'')
 call s:hi('Number',s:palette.accent2,[],'')
 
-call s:hi('Identifier',s:palette.gray08,[],'none')
-call s:hi('Function',s:palette.gray08,[],'')
+call s:hi('Identifier',s:palette.text06,[],'none')
+call s:hi('Function',s:palette.text06,[],'')
 
 call s:hi('Statement',s:palette.accent1,[],'bold')
-call s:hi('Operator',s:palette.gray05,[],'none')
-call s:hi('Keyword',s:palette.gray05,[],'')
+call s:hi('Operator',s:palette.text04,[],'none')
+call s:hi('Keyword',s:palette.text04,[],'')
 
 call s:hi('Type',s:palette.accent1,[],'bold')
 
-call s:hi('Special',s:palette.gray05,[],'')
+call s:hi('Special',s:palette.text04,[],'')
 call s:hi('SpecialComment',s:palette.accent2,[],'bold')
 
-call s:hi('Title',s:palette.gray07,[],'bold')
+call s:hi('Title',s:palette.text05,[],'bold')
 call s:hi('Todo',s:palette.accent1,s:palette.background,'')
 call s:hi('Comment',s:palette.accent2,[],'')
 
-call s:hi('LineNr',s:palette.gray04,[],'none')
-call s:hi('FoldColumn',s:palette.gray07,[],'none')
-call s:hi('CursorLine',s:palette.gray10,s:palette.highlight,'none')
-call s:hi('CursorLineNr',s:palette.highlight,s:palette.gray02,'none')
+call s:hi('LineNr',s:palette.text03,[],'none')
+call s:hi('FoldColumn',s:palette.text05,[],'none')
+call s:hi('CursorLine',s:palette.text07,s:palette.highlight,'none')
+call s:hi('CursorLineNr',s:palette.highlight,s:palette.text01,'none')
 
-call s:hi('Visual',s:palette.gray10,s:palette.accent2,'')
-call s:hi('Search',s:palette.gray10,s:palette.highlight,'none')
-call s:hi('IncSearch',s:palette.gray10,s:palette.highlight,'bold')
+call s:hi('Visual',s:palette.text07,s:palette.accent2,'')
+call s:hi('Search',s:palette.text07,s:palette.highlight,'none')
+call s:hi('IncSearch',s:palette.text07,s:palette.highlight,'bold')
 
 call s:hi('SpellBad',s:palette.red,s:palette.background,'undercurl')
 call s:hi('SpellCap',s:palette.red,s:palette.background,'undercurl')
@@ -294,30 +294,30 @@ call s:hi('SpellRare',s:palette.red,s:palette.background,'undercurl')
 call s:hi('Error',s:palette.red,s:palette.background,'bold')
 call s:hi('ErrorMsg',s:palette.red,s:palette.background,'')
 call s:hi('WarningMsg',s:palette.red,s:palette.background,'')
-call s:hi('ModeMsg',s:palette.gray10,[],'')
-call s:hi('MoreMsg',s:palette.gray10,[],'')
+call s:hi('ModeMsg',s:palette.text07,[],'')
+call s:hi('MoreMsg',s:palette.text07,[],'')
 
 call s:hi('MatchParen',s:palette.red,s:palette.background,'')
 
-call s:hi('Cursor',[],s:palette.gray10,'')
-call s:hi('SpecialKey',s:palette.gray03,[],'')
-call s:hi('NonText',s:palette.gray03,[],'')
-call s:hi('Directory',s:palette.gray05,[],'')
-call s:hi('PreProc',s:palette.gray10,[],'none')
+call s:hi('Cursor',[],s:palette.text07,'')
+call s:hi('SpecialKey',s:palette.text02,[],'')
+call s:hi('NonText',s:palette.text02,[],'')
+call s:hi('Directory',s:palette.text04,[],'')
+call s:hi('PreProc',s:palette.text07,[],'none')
 
-call s:hi('Pmenu',s:palette.gray10,s:palette.gray02,'none')
-call s:hi('PmenuSbar',s:palette.background,s:palette.gray10,'none')
-call s:hi('PmenuSel',s:palette.gray10,s:palette.accent2,'')
-call s:hi('PmenuThumb',s:palette.gray02,s:palette.gray10,'none')
+call s:hi('Pmenu',s:palette.text07,s:palette.text01,'none')
+call s:hi('PmenuSbar',s:palette.background,s:palette.text07,'none')
+call s:hi('PmenuSel',s:palette.text07,s:palette.accent2,'')
+call s:hi('PmenuThumb',s:palette.text01,s:palette.text07,'none')
 
-call s:hi('StatusLine',s:palette.gray10,s:palette.accent2,'none')
-call s:hi('StatusLineNC',s:palette.gray04,s:palette.gray02,'none')
-call s:hi('WildMenu',s:palette.gray08,[],'')
-call s:hi('VertSplit',s:palette.gray02,s:palette.gray02,'none')
+call s:hi('StatusLine',s:palette.text07,s:palette.accent2,'none')
+call s:hi('StatusLineNC',s:palette.text03,s:palette.text01,'none')
+call s:hi('WildMenu',s:palette.text06,[],'')
+call s:hi('VertSplit',s:palette.text01,s:palette.text01,'none')
 
-call s:hi('DiffAdd',s:palette.gray02,s:palette.green,'')
-call s:hi('DiffChange',s:palette.gray02,s:palette.blue,'')
-call s:hi('DiffDelete',s:palette.gray02,s:palette.red,'')
+call s:hi('DiffAdd',s:palette.text01,s:palette.green,'')
+call s:hi('DiffChange',s:palette.text01,s:palette.blue,'')
+call s:hi('DiffDelete',s:palette.text01,s:palette.red,'')
 call s:hi('DiffText',s:palette.background,s:palette.blue,'')
 call s:hi('DiffAdded',s:palette.green,s:palette.background,'')
 call s:hi('DiffChanged',s:palette.blue,s:palette.background,'')

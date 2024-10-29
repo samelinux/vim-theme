@@ -7,7 +7,7 @@ highlight clear
 if exists("syntax_on")
 	syntax reset
 endif
-let g:colors_name="lavander"
+let g:colors_name="noir"
 
 " functions 
 " returns an approximate grey index for the given grey level
@@ -205,21 +205,21 @@ endfun
 
 let s:palette={}
 
-let s:palette.background=[0,'#1c1c1c']
+let s:palette.background=[0,'#121212']
 let s:palette.foreground=[1,'#cacaca']
-let s:palette.highlight=[ 2,'#8937d4']
-let s:palette.accent1=[   3,'#c89bf1']
-let s:palette.accent2=[   4,'#885bb1']
-let s:palette.text01=[    5,'#484848']
-let s:palette.text02=[    6,'#585858']
-let s:palette.text03=[    7,'#686868']
-let s:palette.text04=[    8,'#787878']
-let s:palette.text05=[   10,'#989898']
-let s:palette.text06=[   11,'#a8a8a8']
-let s:palette.text07=[   13,'#e3e3e3']
-let s:palette.green=[     9,'#40916c']
-let s:palette.red=[      14,'#f72585']
-let s:palette.blue=[     12,'#1a759f']
+let s:palette.highlight=[ 2,'#b2b2b2']
+let s:palette.accent1=[   3,'#dadada']
+let s:palette.accent2=[   4,'#888888']
+let s:palette.text01=[    5,'#a8a8a8']
+let s:palette.text02=[    6,'#949494']
+let s:palette.text03=[    7,'#8a8a8a']
+let s:palette.text04=[    8,'#808080']
+let s:palette.text05=[   10,'#767676']
+let s:palette.text06=[   11,'#6c6c6c']
+let s:palette.text07=[   13,'#626262']
+let s:palette.green=[     9,'#87d7af']
+let s:palette.red=[      14,'#dfafaf']
+let s:palette.blue=[     12,'#afd7ff']
 
 let g:terminal_ansi_colors=[
 			\ s:palette.background[1],

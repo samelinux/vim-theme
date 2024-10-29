@@ -1,12 +1,13 @@
 " sam
 "  (https://github.com/samelinux/vim-theme)
+" thanks Gautam Iyer <gautam@math.uchicago.edu for the color conversion func
 
 highlight clear
 
 if exists("syntax_on")
 	syntax reset
 endif
-let g:colors_name="__NAME__"
+let g:colors_name="neonlight"
 
 " functions 
 " returns an approximate grey index for the given grey level
@@ -204,18 +205,18 @@ endfun
 
 let s:palette={}
 
-let s:palette.background=[0,'#1C1C1C']
-let s:palette.foreground=[1,'#FEFEFE']
-let s:palette.highlight=[ 2,'#ECF39E']
-let s:palette.accent1=[   3,'#90A955']
-let s:palette.accent2=[   4,'#7FA75D']
-let s:palette.text01=[    5,'#E8E9EA']
-let s:palette.text02=[    6,'#D9DCDF']
-let s:palette.text03=[    7,'#CECECE']
-let s:palette.text04=[    8,'#BEB4BA']
-let s:palette.text05=[   10,'#ADA5AD']
-let s:palette.text06=[   11,'#8C858D']
-let s:palette.text07=[   13,'#696067']
+let s:palette.background=[0,'#1c1c1c']
+let s:palette.foreground=[1,'#e4e4e4']
+let s:palette.highlight=[ 2,'#008700']
+let s:palette.accent1=[   3,'#87ff87']
+let s:palette.accent2=[   4,'#005f00']
+let s:palette.text01=[    5,'#383838']
+let s:palette.text02=[    6,'#484848']
+let s:palette.text03=[    7,'#585858']
+let s:palette.text04=[    8,'#686868']
+let s:palette.text05=[   10,'#787878']
+let s:palette.text06=[   11,'#888888']
+let s:palette.text07=[   13,'#d3d3d3']
 let s:palette.green=[     9,'#38B000']
 let s:palette.red=[      14,'#D90429']
 let s:palette.blue=[     12,'#05668D']

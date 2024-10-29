@@ -1,4 +1,4 @@
-" sam
+" lavander
 "  (https://github.com/samelinux/vim-theme)
 
 highlight clear
@@ -6,7 +6,7 @@ highlight clear
 if exists("syntax_on")
 	syntax reset
 endif
-let g:colors_name="sam"
+let g:colors_name="lavander"
 
 " functions
 " returns an approximate grey index for the given grey level

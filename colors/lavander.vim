@@ -207,8 +207,8 @@ let s:palette={}
 
 let s:palette.background=[0,'#1c1c1c']
 let s:palette.foreground=[1,'#cacaca']
-let s:palette.highlight=[ 2,'#8937d4']
-let s:palette.accent1=[   3,'#c89bf1']
+let s:palette.highlight=[ 2,'#590794']
+let s:palette.accent1=[   3,'#c87bf1']
 let s:palette.accent2=[   4,'#885bb1']
 let s:palette.text01=[    5,'#484848']
 let s:palette.text02=[    6,'#585858']

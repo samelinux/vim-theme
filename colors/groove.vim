@@ -312,7 +312,9 @@ call s:hi('PmenuSel',s:palette.text07,s:palette.accent2,'')
 call s:hi('PmenuThumb',s:palette.text01,s:palette.text07,'none')
 
 call s:hi('StatusLine',s:palette.text07,s:palette.accent2,'none')
+call s:hi('StatusLineTerm',s:palette.text07,s:palette.accent2,'none')
 call s:hi('StatusLineNC',s:palette.text03,s:palette.text01,'none')
+call s:hi('StatusLineTermNC',s:palette.text03,s:palette.text01,'none')
 call s:hi('WildMenu',s:palette.text06,[],'')
 call s:hi('VertSplit',s:palette.text01,s:palette.text01,'none')
 

@@ -205,21 +205,21 @@ endfun
 
 let s:palette={}
 
-let s:palette.background=[0,'#1c1c1c'] "234
-let s:palette.foreground=[1,'#cacaca'] "251
-let s:palette.highlight=[ 2,'#590794'] "54
-let s:palette.accent1=[   3,'#c87bf1'] "177
-let s:palette.accent2=[   4,'#885bb1'] "97
-let s:palette.text01=[    5,'#484848'] "238
-let s:palette.text02=[    6,'#585858'] "240
-let s:palette.text03=[    7,'#686868'] "242
-let s:palette.text04=[    8,'#787878'] "243
-let s:palette.text05=[   10,'#989898'] "246
-let s:palette.text06=[   11,'#a8a8a8'] "248
-let s:palette.text07=[   13,'#e3e3e3'] "254
-let s:palette.green=[     9,'#40916c'] "65
-let s:palette.red=[      14,'#f72585'] "198
-let s:palette.blue=[     12,'#1a759f'] "31
+let s:palette.background=[0,'#1c1c1c'] "234 EA
+let s:palette.foreground=[1,'#cacaca'] "251 FB
+let s:palette.highlight=[ 2,'#590794'] "54  36
+let s:palette.accent1=[   3,'#c87bf1'] "177 B1
+let s:palette.accent2=[   4,'#885bb1'] "97  61
+let s:palette.text01=[    5,'#484848'] "238 EE
+let s:palette.text02=[    6,'#585858'] "240 F0
+let s:palette.text03=[    7,'#686868'] "242 F2
+let s:palette.text04=[    8,'#787878'] "243 F3
+let s:palette.text05=[   10,'#989898'] "246 F6
+let s:palette.text06=[   11,'#a8a8a8'] "248 F8
+let s:palette.text07=[   13,'#e3e3e3'] "254 FE
+let s:palette.green=[     9,'#40916c'] "65  41
+let s:palette.red=[      14,'#f72585'] "198 C6
+let s:palette.blue=[     12,'#1a759f'] "31  1F
 
 let g:terminal_ansi_colors=[
 			\ s:palette.background[1],
